@@ -308,6 +308,13 @@ This is the most critical step. Bad language ruins perfect structure.
 - 并, 且, 以及 (replace with commas or split sentences)
 - 进行 (replace with specific verb)
 - 以确保, 为了避免 → 以防, 免得
+- **不是...是...** — The #1 AI marker. Negation-then-affirmation is AI's compulsion to "balance" every statement. Delete the negation half, keep only the affirmative. "那不是门，是别的什么" → "那扇门不对。" or just describe behavior.
+- **孤立破折号"——"** — Use sparingly. 160 dashes per 9 stories = AI using dramatic pauses. Real Chinese documents use dashes rarely. Replace with comma, period, or just let sentences run together naturally.
+- **"那是__"作为解释** — "那是安全出口指示灯""那是物业巡查""那是骗你的". AI reflexively explains everything it mentions. Real notices state facts without labeling them: "安全出口指示灯常亮" not "那是安全出口指示灯".
+- **孤立"正常。"** — AI's reassurance tic after describing something wrong. If something is wrong, don't say it's normal. Let the reader decide.
+- **"不解释"** — AI trying to sound mysterious. Real bureaucrats don't announce they're not explaining. They just don't explain.
+- **缺宾语的孤立祈使句** — "别去。""别看。""不要。" — unnatural Chinese. Real people include the object: "别去旧馆。""别看窗外。"
+- **"你不会想__的"** — AI melodrama. Just state the fact.
 
 **Anti-AI structural patterns — MUST break these**:
 - **禁止三项并列**: AI loves "A...B...C..." triple平行结构. If you have three conditions/items, make them different lengths, different grammatical structures. Break one mid-sentence. Make one a fragment.
@@ -317,10 +324,10 @@ This is the most critical step. Bad language ruins perfect structure.
 - **困惑度思维**: When choosing between two words, pick the LESS predictable one. AI defaults to the statistically safest word. "教练不会追问" → "教练不会再提这件事" or "教练当没听见" or just let it hang without closure.
 
 **Rhythm control**:
-- Mix short rules (one sentence, 8-15 chars) with long rules (3-4 sentences, 40-80 chars)
-- Use sentence fragments for urgency: "不要回头。继续走。"
+- Let sentence length follow the natural rhythm of what's being communicated. A short instruction naturally produces a short sentence. A complex procedure naturally produces a longer sentence with clauses.
+- 动物园 NEVER artificially fragments sentences for dramatic effect. "不要投喂兔子。其余的动物都可以。" — short because the idea is simple. "本园安全措施保障绝对没有问题，动物没有出逃的可能性，尤其是小型草食动物大多被关押在不可触摸的封闭性环境里。" — long because it's a bureaucratic assurance.
+- **CRITICAL: Do NOT use stand-alone fragments as a horror technique.** "不要看。" as a standalone paragraph is not how real people write. Real people write "不要看窗外" or "不要往那边看" — the object is included, the sentence is complete. Fragments like "不要看。" "没有。" "别去。" are AI trying to sound dramatic. They achieve the opposite.
 - End documents abruptly — no "祝您..." or "谢谢配合"
-- 短句的恐怖力量: "不要看。" = 三个字，比三十个字更吓人
 
 **Imperfection principle**: Real found documents have flaws. Add ONE of:
 - 被水浸模糊的半行字
