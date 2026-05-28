@@ -36,7 +36,16 @@ Execute each step sequentially. Do not skip steps. Do not output the hidden sett
 Extract from user input:
 - **Setting**: User-specified theme, or randomly pick from the theme pool
 - **Format**: Let the setting dictate format — single document, multi-perspective, or narrative+ rules
-- **Length**: User-specified or infer from request. Three modes:
+- **Length**: User-specified or infer from request. Three modes. (See below)
+- **Style**: Pick ONE style mode from `references/style-modes.md`:
+  - **动物园式** — Cold bureaucratic. Horror from content, never tone. Fatal info hidden as afterthoughts. Occasional typos.
+  - **大洛山式** — Folkloric dual-billboard. Old (wood) vs new (metal) signs. Chinese mythological vocabulary.
+  - **二级学院式** — Heroic rules. Moral positions embedded in documents. Sacrifice and legacy themes.
+  - **E市式** — Clinical emergency protocols. Language-as-defense. Rules admit their own corruption.
+  - **糖果厂式** — Industrial trauma metaphor. Body horror via deprivation. Time-jumping documents.
+  - **育英式** — Extreme minimalism. Three-word rules. Lists that end with impossible items.
+  - Default for most everyday settings: 动物园式. Match style to the setting's natural voice.
+  - Read `references/style-modes.md` before drafting for the chosen style's specific rhythm, vocabulary, and句式模板.
 
 **短篇 (Short)** — 3-5 minute read:
 - 1 document, 5-10 rules, single perspective
@@ -350,3 +359,6 @@ Common mistakes and detailed quality checklist. Read during Step 5 (Horror Polis
 
 ### references/classic-examples.md
 Analyzed extracts from classic works (《动物园》《二级学院》《大洛山》《育英中学》). Read when studying how masterworks handle disclosure and coupling.
+
+### references/style-modes.md
+Six distinct prose styles extracted from classic works. Each with rhythm analysis, 措辞 patterns, 句式模板, and example paragraphs. MUST read before drafting — choose ONE style and apply it to ALL documents in the piece.
