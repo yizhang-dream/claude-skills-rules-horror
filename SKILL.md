@@ -36,7 +36,31 @@ Execute each step sequentially. Do not skip steps. Do not output the hidden sett
 Extract from user input:
 - **Setting**: User-specified theme, or randomly pick from the theme pool
 - **Format**: Let the setting dictate format — single document, multi-perspective, or narrative+ rules
-- **Length**: Let the complexity of the premise dictate length
+- **Length**: User-specified or infer from request. Three modes:
+
+**短篇 (Short)** — 3-5 minute read:
+- 1 document, 5-10 rules, single perspective
+- One anomaly, one clean escalation arc
+- Formats: a single notice, one post-it, one voicemail transcript, one page from a diary
+- Core technique: ONE rule that makes the reader realize they've already broken it
+- Example scenarios: a fridge notice, an elevator sign, a bedside note
+- Setting card: minimal. Just anomaly + trigger + one protective action
+
+**中篇 (Medium)** — 10-15 minute read (current default):
+- 2-4 documents, 15-30 rules, 2-3 factions
+- Contradictions between documents, well-developed symbol system
+- Formats: official notice + insider notes + administrative records
+- Full setting card with all fields
+
+**长篇 (Long)** — 30+ minute read:
+- 5-9 documents, 30-80+ rules, 4-7 factions
+- Faction conversion paths (how someone moves from faction A → B)
+- Document authenticity system (e.g. pen color = trustworthiness, like 二级学院)
+- Structural organizing principle BEYOND documents: physical space (大洛山's mountain trail), time cycle, floor plan, bureaucratic hierarchy
+- Inter-document causal chains: rule in doc A triggers protocol in doc B
+- Reader can do real puzzle-solving — complete hidden story exists
+- Symbol system where each symbol = specific contamination state, appears across ALL documents
+- Expanded setting card required (see Step 2 long-form additions)
 
 Theme pool (when user doesn't specify): 医院, 学校宿舍, 住宅小区, 公司办公室, 酒店, 图书馆, 博物馆, 地铁站, 养老院, 幼儿园, 游泳馆, 电影院, 便利店, 老旧居民楼, 山区民宿, 高速公路服务区
 
@@ -70,6 +94,25 @@ Fill this card internally. **NEVER output it to the user.** It exists only to en
 【节点耦合图】: How concept nodes relate (X disguises Y, Z counters X, etc.)
 
 【恐怖天花板】: What is the WORST thing that can happen to someone in this setting? Not "feel scared" or "see something weird." The ceiling must involve identity loss, replacement, permanent entrapment, or irreversible cognitive destruction. This is the engine that drives all the rules. If the worst outcome is "read a spooky book" → restart Step 2.
+
+--- LONG-FORM ADDITIONS (only for 长篇 mode) ---
+
+【阵营转化路径】: For each faction, define how someone moves FROM this faction TO another. In 动物园: normal tourist → contaminated → sees ocean pavilion → wears black → becomes goat. In 二级学院: student → sees anomaly → joins 督察部 → dies in battle → legacy passes to next 卫生委员. Conversion paths make the world feel alive and give readers stakes.
+
+【文档可信度体系】: Assign each document a trustworthiness level. NOT all documents are equally reliable. In 二级学院: carbon pencil = trusted, black pen = enemy, blue pen = protector. In 大洛山: wood signs = 天辉(old guard), metal signs = 夜魇(new management). Design 2-3 markers (color/material/source) that signal which faction wrote each document.
+
+【结构组织原则】: For 5+ documents, you need an organizing principle beyond "doc 1, 2, 3." Options:
+- 物理空间: 大洛山's mountain trail (100m → 9200m, each document tied to a location)
+- 组织层级: 游客守则 → 员工手册 → 中层管理 → 高层文件 → 外部调查
+- 时间推进: before incident → during → after → years later → investigation report
+- 信息可靠度: from most-trusted to most-corrupted document
+
+【预规划文档地图】: Before drafting any document, list ALL planned documents with:
+- Document name, faction author, reliability marker
+- What NEW information this document contributes (not found in others)
+- Which other documents it contradicts or confirms
+- Where it sits in the structural organizing principle
+This prevents middle-document bloat and ensures every document earns its place.
 ```
 
 ### Step 3: Draft Rules
@@ -87,6 +130,12 @@ Derive every rule from the setting card. Each rule must trace back to a specific
 **正常里掺异常原则 (Normal-with-abnormality principle)**: The first document (official notice) must be 40-50% genuinely normal rules. Real bureaucracy: garbage sorting hours, parking permits, noise complaints. Then ONE small impossible detail appears in an otherwise normal rule. The abnormality seeps in through the cracks of normal procedure. Not every rule should contain horror. The reader should sometimes think "wait, was that one weird or am I imagining it?"
 
 **后果模糊化原则 (Consequence opacity principle)**: Never describe what specifically happens if a rule is broken. Vague bureaucratic phrases are acceptable: "后果自负" "概不负责" "按相关规定处理" — these are what real official documents say. But never: "否则你会死" "会被它带走" "会变成..." 《动物园》从不描述进入海洋馆的具体后果，只说不要进去。未知 > 任何可被描述的惩罚。
+
+**动态安全边界原则 (Dynamic safety boundary principle)**: Safety is never binary. Every protective measure has a specific collapse condition. The lion zone is safe → until a 5th white lion appears. The jellyfish room is safe → until the director's office loses power. The reader should be able to INFER the collapse condition from cross-document clues, not be told directly.
+
+**无知即安全原则 (Ignorance-as-safety principle)**: The more documents the reader reads, the more they know, the more vulnerable they become. This applies to the reader AND to characters in the story. The most knowledgeable document-writer should be the most contaminated. Create a genuine dilemma: reading more rules = more survival tools but also = more exposure.
+
+**守则腐败原则 (Rule-corruption principle)**: Consider having a later version of an official document explicitly contradict an earlier version from the SAME source. Rules don't just conflict across factions — they decay within a single faction over time. The rule-writers themselves are losing the battle.
 
 **文档形式多样化 (Format variety principle)**: Default is not always 3 documents. Consider:
 - 单文档多版修订 (one notice, progressively annotated by different hands over years)
@@ -162,6 +211,9 @@ Then run the **Quality Checklist**:
   - Zero AI connector phrases. Endings are abrupt.
 - [ ] **耦合**: Rules orbit 2-4 PHYSICAL concept nodes with high coupling density. Zero orphan rules.
 - [ ] **信息增量**: If multi-document, each document contributes information not found in others. No document merely confirms another.
+- [ ] **动态安全边界**: Does each protective measure have a specific, inferable collapse condition? Not just "sometimes unsafe" — readers should be able to reason about WHEN it fails.
+- [ ] **无知即安全**: Does acquiring knowledge through reading later documents increase danger? Is the most knowledgeable writer the most contaminated?
+- [ ] **文本考古学**: Do physical document traces (handwriting changes, torn pages, strikethroughs, margin notes) tell a story beyond the text itself?
 
 ### Step 6: Language Polish
 
@@ -224,6 +276,21 @@ This is the most critical step. Bad language ruins perfect structure.
 ```
 
 #### C. General Prose Rules
+
+**CRITICAL: Voice Differentiation (声音差异化)** — Each document MUST sound like a different person wrote it. This is the #1 failure mode. Before writing each document, define its voice profile:
+
+| 维度 | 如何差异化 |
+|------|----------|
+| **句子长度习惯** | 有人爱写短句。三个字。五个字。有人一段话不断气写到页面边缘。人在不同状态下句子节奏不同——慌张的人句子碎，官僚的人句子长而平稳。 |
+| **用词范围** | 医生写"体温""体征""预后"。病人写"冷""睡不着""那根体温计"。保安写"巡""查看""记录"。不要所有人共用同一套词汇。 |
+| **标点习惯** | 有人只用句号。有人爱用破折号——想到哪说到哪。有人标点规范像印刷品。有人通篇逗号到底。标点本身就是指纹。 |
+| **情感外露程度** | 官僚文件：零情感。退休老护士的信：有温度，会叹气。墙上涂鸦：绝望或麻木。CDC报告：纯客观。每份文档的情感温度必须不同。 |
+| **口头禅/个人特征** | 老护士的信里可能有"闺女""你干两年就懂了"。病人涂鸦可能在反复写同一个词。官僚文件决不会有口头禅。 |
+
+**Voice audit（写完所有文档后逐份朗读检查）**：
+- 遮住文档标题，只读正文。能从语言习惯猜出这是谁写的吗？
+- 如果两份文档互换开头两句话——读起来还自然吗？如果自然 → 声音没拉开，重写其中一份。
+- 最简测试：文档A的任意一句话，可能出现在文档B里吗？如果可能 → 声音不够差异化。
 
 **Banned AI phrases** (delete on sight):
 - 值得一提的是, 综上所述, 总而言之
